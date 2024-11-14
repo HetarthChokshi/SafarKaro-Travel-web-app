@@ -1,0 +1,102 @@
+#international .header-title{
+    font-size: 40px !important;
+    font-family:Arial, Helvetica, sans-serif;
+    position: absolute;
+    top:20%;
+    left: 35%;
+ 
+}
+#international .sub-index{
+   position: absolute;
+   top: 27%;
+   left:42%;
+   color: white;
+   font-size: 25px;
+
+}
+
+
+
+#international .grid{
+    margin: 100PX 50px;
+}
+#international div.gallery {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  #international   div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  #international div.gallery img {
+    width: 100%;
+    height: 350px;
+    aspect-ratio: 4/5 ;
+  }
+  
+  #international  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+ 
+  
+  #international  .responsive {
+    padding: 0 6px;
+    float:left;
+    width: 24.99999%;
+    margin-left: 20px;
+    
+  }
+  
+ @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  #international .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+/* international html page css */
+@media only screen and (max-width: 500px) {
+  #international .navbar-collapse {
+      background-color: rgb(45, 46, 46) !important;
+      justify-content: center;
+      border-radius: 5px;
+      z-index: 10 !important;
+  }
+
+  #international  #div2infoot {
+      justify-content: flex-start !important;
+  }
+
+  #international .header-title {
+      font-size: 22px !important;
+      top: 25%;
+      left: 23%;
+  }
+
+  #international .sub-index {
+      font-size: 18px;
+      top: 32%;
+      left: 35%;
+
+  }
+
+  #international  #firstcard {
+      margin-left: 0px !important;
+  }
+}

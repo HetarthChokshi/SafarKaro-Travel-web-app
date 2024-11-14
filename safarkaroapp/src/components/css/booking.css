@@ -1,0 +1,77 @@
+#booking  {
+    background-color: rgb(255, 250, 250) ;
+    padding: 20px;  
+  }
+  
+#booking #nav{
+    position: static !important;
+}
+#booking .container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    padding-left: 40px; /* Increase left padding */
+    margin-top: 30px; /* Adjust the margin as needed */
+    max-width: 650px; /* Decrease max-width to make the container smaller */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    padding-right: 5px;
+    
+  }
+  
+  #booking   .heading {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+  
+  #booking  .sub-heading {
+    font-size: 18px;
+    font-weight: bold; /* Makes the sub-heading bold */
+    margin-bottom: 15px;
+  }
+  
+  #booking .form-group {
+    margin-bottom: 20px;
+  }
+  
+  #booking .label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #booking .form-control {
+    width: 100%;
+    max-width: 80%;  /* Limits the width to 80% */
+    /* padding: 10px; */
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #booking  .proceed-button {
+    /* position: relative;
+    right: 20px;
+    bottom: 20px;  */
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--orange);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;  
+  }
+  
+  #booking  .proceed-button:hover {
+    background-color: darkorange; /* Optional: darkens the button on hover */
+  }
+  
+
+  #booking .red-text{
+    color: rgb(201, 0, 0);
+    font-weight: bold;
+  }
+

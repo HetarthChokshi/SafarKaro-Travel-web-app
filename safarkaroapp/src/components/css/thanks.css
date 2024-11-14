@@ -1,0 +1,64 @@
+#thanks .header2 {
+    position: absolute;
+    top: 32%;
+    left: 35%;
+
+}
+
+#thanks .header2 h1 {
+
+    font-family: 'Brush Script MT', cursive;
+    color: white;
+    font-size: 120px !important;
+}
+
+#thanks .header2 p {
+    font-size: large;
+    color: whitesmoke;
+}
+
+#thanks .header2 a {
+    margin-left: 35%;
+}
+
+#thanks .btn-primary {
+    background-color: rgb(235, 101, 30);
+    border-color: rgb(235, 101, 30);
+    box-shadow: 4px 10  px 4px rgba(0, 0, 0, 0.06);
+}
+
+#thanks .btn-primary:hover {
+    background-color: rgb(214, 93, 27);
+    border-color: rgb(214, 93, 27);
+}
+
+@media only screen and (max-width: 500px) {
+    #thanks .navbar-collapse {
+        background-color: rgb(45, 46, 46) !important;
+        justify-content: center;
+        border-radius: 5px;
+        z-index: 10 !important;
+    }
+    #thanks  #image {
+        height: 500px;
+        object-fit: cover;
+    }
+    #thanks .header2{
+        top:25%;
+        left: 20%;
+    }
+    #thanks .header2 h1{
+        font-size: 60px !important;
+    }
+    #thanks .header2 p{
+        font-size: 12px;
+        color:white;
+        margin: 5px 10px;
+    }
+    #thanks .header2 a{margin-left: 20%;
+        margin: 15px 10px;}
+    #thanks  #div2infoot {
+        justify-content: flex-start !important;
+    }
+
+}

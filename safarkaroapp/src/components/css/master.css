@@ -1,0 +1,139 @@
+ #nav{
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+
+ #footer{
+    margin-bottom: 0px;
+}
+  .footer-heading{
+    color:rgb(255, 109, 30);
+    opacity:100%;
+}
+  .faf-icons{
+    background-color: rgb(255, 109, 30);
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+  .faf-icons:hover{
+    background-color: rgb(50, 50, 231);
+    color: rgb(255, 109, 30);
+}
+
+ hr{
+    width:80%;
+    border:0px;
+}
+
+ .logo-footer{
+    text-align: center;
+    
+}
+  #div2infoot{
+    margin-top: 10px;
+}
+ #con_in_foot{
+    text-align: center;
+    margin-top: 0px;
+}
+
+ .footer-text{
+    font-size: 18px;
+}
+ .self-active{
+    background-color: white;
+    border-radius: 5px;
+    color: #ff6d1e !important;
+    font-weight: 500;
+}
+ .nav-item a{
+   position: relative;
+}
+  .nav-item a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: all 0.6s ease;
+}
+ .nav-item a::before {
+  bottom: 0;
+  left: 0;
+}
+ .nav-item a:hover:not(.self-active):before {
+  transform: scaleX(1);
+  color:white !important;
+}
+ .nav-item a:not(.self-active){
+    color: white !important;
+    font-weight: 600;
+}
+ 
+@media screen and (max-width:992px){
+    .header-title {
+        font-size: 50px;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        right: auto;
+ 
+    }
+ 
+    #header-title-span {
+        font-size: 50px !important;
+ 
+ 
+    }
+ 
+    .header-slogan {
+        position: absolute;
+        top: 45%;
+        left: 10%;
+        right: auto;
+    }
+ 
+    .navbar-collapse {
+        background-color: rgb(45, 46, 46) !important;
+        justify-content: center;
+        border-radius: 5px;
+        z-index: 10 !important;
+    }
+ 
+    #div2infoot {
+        justify-content: flex-start !important;
+    }
+ 
+}
+
+.header-title{
+    color: white;
+    position: absolute;
+    top: 16%;
+    left: 25%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;   
+}
+.header-slogan{
+    background-color: rgba(240, 248, 255, 0.475);
+    color: rgb(86, 86, 86);
+    position: absolute;
+    top:37%;
+    left:38%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 5px;
+    border:1px solid white;
+    /* box-shadow: 0px 0px 10px 1px whitesmoke ; */
+}
+

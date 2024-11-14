@@ -1,0 +1,81 @@
+#contact {
+    background-color: whitesmoke;
+}
+#contact .contact-content{
+    background-color: white;
+    padding: 25px 50px;
+    border-radius: 10px;
+    margin-left: 50px;
+    box-shadow: 0 5px 10px #00000014;
+}
+#contact .btn-submit{
+    width: 150px !important;
+    background-color: rgb(36, 150, 195) !important;
+    border-color: rgb(36, 150, 195);
+}
+#contact .btn-submit:hover{
+    border-color: rgb(36, 150, 195);
+}
+#contact .connect{
+    font-size: medium;
+}
+#contact .form-control{
+    width: 500px !important;
+}
+#contact .footer-text{
+    font-size: 17px !important;
+    font-weight: 350 !important;
+    font-family: 'Poppins';
+}
+#contact .footer-heading{
+    font-size: 20px;
+    font-family: 'Poppins'; 
+}
+#contact .branch{
+    border-radius: 10px;
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin:20px 10px;
+}
+#contact .branch h5{
+    background-color: #f8d5c5;
+    border-radius: 5px;
+    padding: 2px;
+    width: 200px;
+    margin-left:40px ;
+}
+#contact .branch p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* contact main css  */
+@media only screen and (max-width: 500px) {
+    #contact .navbar-collapse {
+        background-color: rgb(45, 46, 46) !important;
+        justify-content: center;
+        border-radius: 5px;
+        z-index: 10 !important;
+    }
+    #contact .contact-content{
+        margin-left: 0px;
+        padding: 25px 25px;
+    }
+    #formdiv{
+        justify-content: flex-start;
+    }
+    #contact .form-control{
+        width:300px !important;
+    }
+    #contact .contact-content{
+        margin: 30px 20px;
+    }
+    #firstB{
+        margin-left: 10px !important;
+    }
+    #lastB{
+        margin-right: 0px !important;
+    }
+    #contact .branch h5{
+        margin-left:80px ;       
+    }
+}

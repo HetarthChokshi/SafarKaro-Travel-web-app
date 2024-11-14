@@ -1,0 +1,420 @@
+#home #nav{
+     position: absolute;
+     top:0px;
+     left:0px;
+ }
+ 
+ #home #footer{
+     margin-bottom: 0px;
+ }
+ #home  .footer-heading{
+     color:rgb(255, 109, 30);
+     opacity:100%;
+ }
+ #home  .faf-icons{
+     background-color: rgb(255, 109, 30);
+     margin-left: 10px;
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     text-align: center;
+     margin-top: 10px;
+     transition: 0.5s;
+ }
+ #home  .faf-icons:hover{
+     background-color: rgb(50, 50, 231);
+     color: rgb(255, 109, 30);
+ }
+ 
+ #home hr{
+     width:80%;
+     border:0px;
+ }
+ 
+ #home .logo-footer{
+     text-align: center;
+     
+ }
+ #home  #div2infoot{
+     margin-top: 10px;
+ }
+ #home #con_in_foot{
+     text-align: center;
+     margin-top: 0px;
+ }
+ 
+ #home .footer-text{
+     font-size: 18px;
+ }
+ #home .self-active{
+     background-color: white;
+     border-radius: 5px;
+     color: #ff6d1e !important;
+     font-weight: 500;
+ }
+ #home .nav-item a{
+    position: relative;
+ }
+ #home  .nav-item a::before {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 2px;
+   background: #fff;
+   border-radius: 5px;
+   transform: scaleX(0);
+   transition: all 0.6s ease;
+ }
+ #home .nav-item a::before {
+   bottom: 0;
+   left: 0;
+ }
+ #home .nav-item a:hover:not(.self-active):before {
+   transform: scaleX(1);
+   color: white !important;
+ }
+ #home .nav-item a:not(.self-active){
+     color: white !important;
+     font-weight: 600;
+ }
+  
+ #home .header-title{
+     color: white;
+     position: absolute;
+     top: 16%;
+     left: 25%;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 100px;   
+ }
+ #home .header-slogan{
+     background-color: rgba(240, 248, 255, 0.475);
+     color: rgb(86, 86, 86);
+     position: absolute;
+     top:37%;
+     left:38%;
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-size: 20px;
+     text-align: center;
+     font-weight: 500;
+     border-radius: 5px;
+     border:1px solid white;
+     /* box-shadow: 0px 0px 10px 1px whitesmoke ; */
+ }
+ #home .india-travel{
+    width: 100%;
+    height: 650px;
+    position: relative;
+ }
+ #home  .india-travel::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../../../public/Resources/india.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 650px;
+    opacity: 0.1 ;
+ }
+ #home  .india-text{
+    font-size:40px;
+    font-weight: bold;
+    margin-top:20px;
+ }
+ #home #carouselExample{
+    width: 80% !important;
+    height: 70% !important;
+    display: block;
+    margin: auto;
+    margin-top: 4%;
+    margin-left: 200px;
+ }
+ #home .card-img-top{
+    aspect-ratio: 4/5 !important;
+ }
+ #home .festivals{
+   width: 100%;
+   background-color: #0f172ae3; 
+ }
+ #home .festivals-title{
+    text-align: center;
+    font-size:50px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: 600;
+ }
+ #home .wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    column-gap: 30px;
+    row-gap: 10px;
+   
+ }
+ #home  .wrapper img{
+    width:100%;
+    border-radius: 10px;
+    aspect-ratio:  3/2;
+   
+ }
+ #home .box{
+    padding:5px;
+    position: relative;
+    
+ }
+ #home .intro{
+   padding: 2px;
+   color:white;
+   font-size: 20px;
+   position: absolute; 
+   box-sizing: border-box;
+   width: 300px;
+   height: 200px;
+   bottom: -55%;
+   transition: 1s; 
+}
+#home .card-body{
+   padding: 10px ;
+}
+#home .intro p{
+   margin: 10px;
+   visibility: hidden;
+   font-size: 15px;
+   font-weight: 500;
+}
+#home .intro h4{
+   margin:10px;
+}
+#home .box:hover{
+   cursor:pointer;
+}
+#home .box:hover .intro{
+   visibility: visible;
+   opacity: 1; 
+   bottom: 0px;
+}
+#home .box:hover .intro>p{
+   visibility: visible;
+}
+#home .box:hover img{
+   filter: brightness(40%) ;
+}
+#home .festive-heading{
+   font-size: 14px;
+   background-color: #f87128;
+   border-radius: 5px;
+   padding: 5px;
+}
+#home .international{
+   width:100%;
+   height: 550px;
+   background-color: whitesmoke;
+   
+}
+#home .card-img{
+   width: 287px;
+   height: 200px;
+}
+#home .card-body a{
+   background-color:#ff6d1e;
+   color: white;
+   box-shadow:  0 5px 10px #00000014;;
+}
+#home .testimonial{
+   background-color: #faedcd;
+   margin: 20px 0px;
+   border-top: 1px solid  #c7bca1; 
+   border-bottom: 1px solid #c7bca1;
+   padding: 10px;
+}
+#home #test-text{
+   margin-top: 8%;
+   margin-right: 2%;
+  max-width: 300px;
+}
+#home .reviews{
+   width: 800px;
+   height: 400px;
+   background-color:#f4a261;
+   border-radius: 10px;
+}
+#home .reviews img{
+   float: left;
+   width: 150px;
+   height: 140px;
+   border-radius: 10px;
+   margin-right: 15px;
+   margin-top: 15%;
+   margin-left: 10px;
+}
+#reviews-div{
+   margin-top: 15%;
+   margin-right: 5px;
+   padding-left: 2px ;
+   font-family:sans-serif;  
+}
+.profile-pic{
+   width: 35px;
+   border-radius: 50%;
+   cursor: pointer;
+   margin-right: 5px;
+   margin-left: 60%;
+}
+
+ .sub-menu-wrap{
+position: absolute;
+top:65%;
+right: 0px;
+width:320;
+z-index: 10;
+max-height: 0px;
+overflow: hidden;
+transition: max-heigth 0.5;
+font-size: 14px;
+}
+.sub-menu-wrap.open-menu{
+   max-height: 400px;
+}
+
+ .sub-menu{
+background: #fff;
+padding: 10px;
+margin: 10px;
+}
+ .user-info{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.user-info h4{
+   font-weight: 500;
+   font-size: medium;
+   float: left;
+   margin-top: 10px;
+}
+ .user-info img{
+   border-radius: 50%;
+   width: 40px;
+   margin-right: 15px;
+   float: left;
+   border: 0.5px black !important;
+}
+.sub-menu hr{
+   border: 0 !important;
+   height: 1px !important;
+   width: 100% !important;
+   background: #ccc !important;
+   margin: 15px 0 10px !important;
+
+}
+.sub-menu-link{
+   display: flex;
+   /* align-items:center ; */
+   text-decoration: none;
+   color: #525252 !important;
+   margin: 0px 0;
+   justify-content:flex-start   !important;
+   
+}
+.sub-menu-link p{
+   width: 100%;
+   font-family: 'Poppins' !important;
+}
+.sub-menu-link span{
+   font-size: 22px;
+   transition: transform 0.5s;
+}
+.sub-menu-link:hover span{
+   transform: translateX(5px);
+}
+.sub-menu-link:hover p{
+   font-weight: 600 !important;
+}
+ #login-btn{
+   width: 80px !important;
+   background-color:rgb(255, 109, 30); 
+   color: white !important;
+   border:0px;
+   margin-left:54.6%;
+   margin-right: 10px;
+   font-weight: 600;
+   border-radius: 4px;
+}
+
+#login-btn:hover{
+   background-color: white;
+   color: rgb(255, 109, 30) !important;
+}
+
+
+
+
+/* home html page css */
+@media only screen and (max-width: 500px) {
+   #home .header-title {
+       font-size: 50px;
+       position: absolute;
+       top: 20%;
+       left: 10%;
+       right: auto;
+
+   }
+
+   #header-title-span {
+       font-size: 50px !important;
+
+
+   }
+
+   #home .header-slogan {
+       position: absolute;
+       top: 45%;
+       left: 10%;
+       right: auto;
+   }
+
+   #home .navbar-collapse {
+       background-color: rgb(45, 46, 46) !important;
+       justify-content: center;
+       border-radius: 5px;
+       z-index: 10 !important;
+   }
+
+   #home #div2infoot {
+       justify-content: flex-start !important;
+   }
+
+   #carouselExample {
+       margin-top: 25%;
+       width: 100% !important;
+       height: 100% !important;
+   }
+
+   #home .international {
+       height: auto;
+       font-size: 15px;
+   }
+
+   #home .international .card {
+       margin-right: 0px;
+       margin-top: 10px;
+       margin-bottom: 5px;
+   }
+
+   #home .card-img {
+       height: 150px;
+   }
+}
+
+.link{
+   text-decoration: none !important;
+   color: black;
+}
+.link:hover{
+   text-decoration: none !important;
+   color: black;
+}
+
+.text-light:hover{
+   color:white !important;
+
+}

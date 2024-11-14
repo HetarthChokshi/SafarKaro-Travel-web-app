@@ -1,0 +1,54 @@
+.buidingsection{
+    text-align: center;
+    margin-top: 3%;
+    font-family: 'Quicksand';
+}
+.yearsof-success{
+    text-align: center;
+    font-family: 'Quicksand';
+    margin: 60px 0px;
+}
+.yearsof-success h4{
+    color: #F26A2F;
+    font-size: 40px;
+    font-family: 'Quicksand';
+}
+.yearsof-success p{
+    font-size: 20px;
+    font-family:'Quicksand';
+    font-weight: 900 !important;
+}
+.altr-about{
+    font-family:'Quicksand' ;
+}
+.altr-about p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.whoweare{
+    background-color: #ffd2be;
+    border-radius: 10px;
+    padding: 40px;
+}
+.webeleve{
+    background-color: #ffd2be;
+    border-radius: 10px;
+    padding: 40px;
+
+}
+.whatwe{
+    background-color:#fc814ce9;
+    border-radius: 10px;
+    padding: 40px;
+}
+#about .path{
+    color: white;
+    position: absolute;
+    text-align: center;
+    top:25%;
+    left:25%;
+    
+}

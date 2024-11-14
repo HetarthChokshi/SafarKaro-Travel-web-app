@@ -1,0 +1,350 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+   <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    /> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      body {
+        margin-top: 20px;
+        color: #484b51;
+      }
+      .text-secondary-d1 {
+        color: #728299 !important;        
+      }
+      .page-header {
+        margin: 0 0 1rem;
+        padding-bottom: 1rem;
+        padding-top: 0.5rem;
+        border-bottom: 1px dotted #e2e2e2;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-align: center;
+        align-items: center;
+      }
+      .page-title {
+        padding: 0;
+        margin: 0;
+        font-size: 1.75rem;
+        font-weight: 300;
+      }
+      .brc-default-l1 {
+        border-color: #dce9f0 !important;
+      }
+
+      .ml-n1,
+      .mx-n1 {
+        margin-left: -0.25rem !important;
+      }
+      .mr-n1,
+      .mx-n1 {
+        margin-right: -0.25rem !important;
+      }
+      .mb-4,
+      .my-4 {
+        margin-bottom: 1.5rem !important;
+      }
+
+      hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      .text-grey-m2 {
+        color: #888a8d !important;
+      }
+
+      .text-success-m2 {
+        color: #86bd68 !important;
+      }
+
+      .font-bolder,
+      .text-600 {
+        font-weight: 600 !important;
+      }
+
+      .text-110 {
+        font-size: 110% !important;
+      }
+      .text-blue {
+        color: #478fcc !important;
+      }
+      .pb-25,
+      .py-25 {
+        padding-bottom: 0.75rem !important;
+      }
+
+      .pt-25,
+      .py-25 {
+        padding-top: 0.75rem !important;
+      }
+      .bgc-default-tp1 {
+        background-color: rgba(121, 169, 197, 0.92) !important;
+      }
+      .bgc-default-l4,
+      .bgc-h-default-l4:hover {
+        background-color: #f3f8fa !important;
+      }
+      .page-header .page-tools {
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+      }
+
+      .btn-light {
+        color: #757984;
+        background-color: #f5f6f9;
+        border-color: #dddfe4;
+      }
+      .w-2 {
+        width: 1rem;
+      }
+
+      .text-120 {
+        font-size: 120% !important;
+      }
+      .text-primary-m1 {
+        color: #4087d4 !important;
+      }
+
+      .text-danger-m1 {
+        color: #dd4949 !important;
+      }
+      .text-blue-m2 {
+        color: #68a3d5 !important;
+      }
+      .text-150 {
+        font-size: 150% !important;
+      }
+      .text-60 {
+        font-size: 60% !important;
+      }
+      .text-grey-m1 {
+        color: #7b7d81 !important;
+      }
+      .align-bottom {
+        vertical-align: bottom !important;
+      }
+      .dark{
+        background-color: black;
+        color:white;
+      }
+      .logo-text{
+        position: relative;
+        top: 3px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(255, 148, 91);
+      }
+      .table {
+        border-collapse: collapse; /* Ensures borders are combined */
+        width: 100%; /* Make sure the table takes full width */
+    }
+    
+    .table th, .table td {
+        padding: 8px; /* Add padding for better readability */
+        text-align: center; /* Center text in cells */
+        border: 1px solid #ddd; /* Add border to cells */
+    }
+    
+    .table th {
+        background-color: #007bff; /* Header background color */
+        color: white; /* Header text color */
+    }
+    
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: #f9f9f9; /* Zebra striping for rows */
+    }
+    
+    </style>
+  </head>
+  <body>
+  
+
+    <div class="page-content container ">
+      <div class="container px-0">
+        <div class="row mt-4">
+          <div class="col-12 col-lg-12">
+            <div class="row dark">
+              <div class="col-12">
+                <div class="text-center text-150">
+                  <img src="http://localhost:8000/static/safar_logo.png"
+                   alt="Company Logo" width="90" height="auto">
+                  <span class="logo-text">Safar Karo - Tours & Travels</span>
+                </div>
+              </div>
+            </div>
+           
+
+
+       
+            <!-- .row -->
+
+            <!-- <hr class="row brc-default-l1 mx-n1 mb-4" /> -->
+            <div class="page-header text-blue-d2">
+                <h1 class="page-title text-secondary-d1">
+                  Booking
+                  <small class="page-info">
+                    ID: {{bookingID}}
+                  </small>
+                </h1>
+                <div class="page-tools">
+                 
+                </div>
+              </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div>
+                  <span class="text-600 text-110 text-blue align-middle"
+                    >{{username}}</span
+                  >
+                </div>
+                <div class="text-grey-m2">
+                  <div class="my-1">
+                    <i class="fa-solid fa-envelope"></i> {{email}} </div>
+                  <div class="my-1">
+                    <i class="fa-solid fa-phone"></i>
+                    <b class="text-600">{{mobile}}</b>
+                  </div>
+                </div>
+                <br>
+                <div>
+                 <b> Tour Information: </b> 
+                 <p>
+                  <div><b>Destination:</b> {{destination}}</div>
+                  <div><b>Travel Date:</b> {{travel_date}}</div>
+                  <div><b>Tour:</b> {{tour_type}}</div>
+                 </p>
+                </div>
+                <br>
+                <div> 
+                  <div class="mt-1 mb-2 text-secondary-m1 text-600 text-125" style="font-size: 1.5rem; font-weight: bold;">
+                    Invoice
+                  </div>
+                  <div class="my-2">
+                
+                    <span class="text-600 text-90">Booking ID:</span> {{ bookingID }}
+                </div>
+        
+                <div class="my-2">
+                   
+                    <span class="text-600 text-90">Booking Date:</span> {{ booking_date }}
+                </div>
+        
+                <div class="my-2">
+                    
+                    <span class="text-600 text-90">Status:</span>
+                    <span class="badge badge-warning badge-pill px-25">Paid</span>
+                </div>
+
+                </div>
+              </div>
+              <!-- /.col -->
+              <div class="text-95 col-sm-6 align-self-start d-flex justify-content-end" style="margin-bottom: 20px;">
+                <hr class="d-sm-none" />
+                <div class="text-grey-m2">
+                    <div class="mt-1 mb-2 text-secondary-m1 text-600 text-125" style="font-size: 1.5rem; font-weight: bold;">
+                        Invoice
+                    </div>
+            
+                    <div class="my-2">
+                        <i class="fa fa-circle text-blue-m2 text-xs mr-1"></i>
+                        <span class="text-600 text-90">Booking ID:</span> {{ bookingID }}
+                    </div>
+            
+                    <div class="my-2">
+                        <i class="fa fa-circle text-blue-m2 text-xs mr-1"></i>
+                        <span class="text-600 text-90">Booking Date:</span> {{ booking_date }}
+                    </div>
+            
+                    <div class="my-2">
+                        <i class="fa fa-circle text-blue-m2 text-xs mr-1"></i>
+                        <span class="text-600 text-90">Status:</span>
+                        <span class="badge badge-warning badge-pill px-25">Paid</span>
+                    </div>
+                </div>
+            </div>
+            
+              <!-- /.col -->
+            </div>
+
+            <table class="table table-striped mt-4 mx-auto text-center" style="width: 100%;">
+              <thead class="thead-dark text-white bgc-default-tp1">
+                  <tr>
+                      <th scope="col" style="width: 10%;">S.No</th>
+                      <th scope="col" style="width: 70%;">Traveller Name</th>
+                      <th scope="col" style="width: 20%;">Age</th>
+                  </tr>
+              </thead>
+              <tbody class="text-secondary-d3">
+                {% for travel in travelers %}
+                  <tr>
+                      <td>{{travel.id }}</td>
+                      <td>{{travel.name }}</td> <!-- Adjust based on your context data -->
+                      <td>{{travel.age }}</td> <!-- Adjust based on your context data -->
+                  </tr>
+                {% endfor %}
+                  <!-- Add more rows as needed -->
+              </tbody>
+          </table>
+          
+            
+              <div class="row border-b-2 brc-default-l2"></div>
+
+                <div class="row mt-3">
+                  <div class="col-12 col-sm-7 text-grey-d2 text-95 mt-2 mt-lg-0">
+                    Incl. of 18% GST. 
+                    <div>
+                      <b> Total Amount </b>&nbsp;  <span class="text-150 text-success-d3 opacity-2" style="font-size: 12px;">
+                        <i class="fa-solid fa-indian-rupee-sign fa-sm"></i>{{ amount }}
+                    </span>
+                    </div>
+                  </div>
+                
+
+                <div
+                  class="col-12 col-sm-5 text-grey text-90 order-first order-sm-last"
+                >
+               
+
+                <div class="row my-2 align-items-center bgc-primary-l3 p-2" style="border-radius: 5px;">
+                  <div class="col-7 text-right" style="font-weight: bold;">
+                      Total Amount 
+                  </div>
+                  <div class="col-5 text-left">
+                      <span class="text-150 text-success-d3 opacity-2" style="font-size: 1.2rem;">
+                          <i class="fa-solid fa-indian-rupee-sign fa-sm"></i> {{ amount }}
+                      </span>
+                  </div>
+              </div>
+                </div>
+              </div>
+
+              <hr />
+
+              <div>
+                <center>
+                <span class="text-secondary-d1 text-150"
+                  >Thank you for choosing us your travel partner !</span
+                >
+              </center>
+              <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

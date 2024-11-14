@@ -1,0 +1,318 @@
+:root{
+    --orange:rgb(255, 109, 30);
+    --blue:#eaf8f;
+}
+#indtour  #nav{
+    /* position:static !important; */
+    height: 100px !important;
+    background-color:  #041c33;
+}
+#indtour .path{
+    background-color: rgb(218, 216, 216);
+    height: 35px;
+    padding: 5px;
+    padding-left: 22px;
+    font-size: large;
+    margin-top: 100px;
+    font-family: 'Poppins';
+}
+#indtour {
+    background-color: white;
+}
+#indtour .title{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+#indtour .days1{
+    width: 80px;
+    height: 30px;
+    float: left;
+    padding: 3px;
+    border: 0.5px solid var(--orange);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+#indtour .days2{
+    width:80px;
+    height: 30px;
+    background-color: var(--orange);
+    border: 0.5px solid var(--orange);
+    float: left;
+    color: white;
+    padding: 3px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+#indtour .slide{
+    padding: 10px;
+
+}
+#indtour .form-heading{
+ background-color: #041c33;
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
+ color: white;
+ padding: 10px;
+ font-size: 20px;
+ padding-right: 120px;
+ padding-left: 20px;
+}
+#indtour .form{
+background-color: whitesmoke;
+padding: 20px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+#indtour .slide img{
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.864);
+}
+#indtour .field-text{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+#indtour .form-control{
+    height: 40px !important;
+}
+#indtour .price-content-1{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+#indtour .price-content-2{
+    color: var(--orange);
+    
+}
+#indtour .price-content-3{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 350;
+}
+#indtour .price{
+    margin-top: 40px;
+}
+#indtour .btn-primary-custom{
+    width:300px !important;
+    background-color: var(--orange) !important;
+    border: 1px solid var(--orange) !important;
+    font-weight:500 !important;
+}
+#indtour .btn-primary-custom:hover{
+    background-color: white !important;
+    color: var(--orange) !important;
+}
+#indtour .icon-box {
+    border: 1px solid var(--orange);
+    border-radius: 5px;
+    padding: 10px;
+    width: 80px;
+    height: 50px;
+    text-align: center;
+    color: var(--orange);
+    margin-right: 10px;
+  }
+  #indtour .icon {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  #indtour  #v-tab{
+    background-color: #eaf8fb !important;
+    color: black !important;
+    width: 250px;
+    align-items: flex-start;
+    padding-left: 20px;
+    font-family: 'Poppins'; 
+  }
+  #indtour  .nav-pills{
+    border-left: 4px solid var(--orange) !important ;
+  }
+  #indtour  .nav-link{
+    font-weight: 600 !important;
+  }
+  #indtour  .active{
+    background-color: white !important;
+    color: var(--orange)  ;
+  }
+#overview,#tourinfo,#cancel,#includes,#tourdates,#itinerary{
+    padding:10px;
+    padding-top: 30px;
+    color: black !important;
+    font-family: 'Poppins';
+    font-size: 15px;
+}
+
+
+#includes h6{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    height:40px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+#exclude{
+    background-color: #cc3d40 !important;
+}
+#tourdates h6{
+    background-color: var(--orange) ;
+    color: white;
+    padding: 10px;
+    height:40px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+#dates{
+    margin-right: 40px;
+
+}
+#dates h6,#dates li{
+    font-family:sans-serif;
+    font-weight: normal !important;
+}
+#checklist{
+    font-size: 16px;
+    font-family: 'Poppins';
+    line-height: 20px !important;
+}
+
+/* kashmir html page css */
+#indtour .nav-link:not(.active) {
+    color: black ;
+}
+
+#indtour .nav-link:hover {
+    /* color: black !important; */
+}
+
+@media only screen and (max-width: 500px) {
+    #indtour .navbar-collapse {
+        background-color: #041c33 !important;
+        justify-content: center;
+        border-radius: 5px;
+        z-index: 10 !important;
+    }
+
+    #indtour #div2infoot {
+        justify-content: flex-start !important;
+    }
+
+    #indtour  img {
+        height: 300px;
+    }
+
+    #indtour #slide {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        margin-left: 0px;
+    }
+
+    #indtour #inner-div-1 {
+        padding-left: 2px !important;
+        font-size: 16px !important;
+    }
+
+    #EnquiryForm {
+        margin-left: 50px !important;
+    }
+
+    #overview,
+    #tourinfo,
+    #cancel,
+    #includes,
+    #tourdates,
+    #itinerary {
+        padding: 2px !important;
+        font-size: 10px !important;
+    }
+
+    #v-tab {
+        width: 100px;
+        padding-left: 2px;
+        font-size: 10px;
+    }
+
+    #includes h6 {
+        font-size: 14px;
+        height: 20px;
+        padding: 2px;
+
+    }
+
+    #tourdates h6 {
+        padding: 2px;
+        height: 20px;
+        font-size: 14px;
+    }
+
+    #tour_plan h6,
+    #tourinfo h6,
+    #cancel h6 {
+        font-size: 14px !important;
+    }
+
+    #indtour .form-heading {
+        padding: 10px;
+        font-size: 16px;
+        padding-right: 70px;
+        padding-left: 10px;
+    }
+
+    #indtour .form {
+        padding: 10px;
+    }
+
+    #indtour .form-control {
+        height: 30px !important;
+    }
+
+    #indtour .btn-primary {
+        width: 150px !important;
+    }
+
+    #btn-form {
+        padding-left: 50px !important;
+    }
+}
+
+
+#indtour .link-login{
+    color: white !important;
+}
+#indtour .link-login:hover{
+    color: white !important;
+}
+
+#indtour .login-btn:hover{
+   border-color: white !important;
+   border:0px !important;
+  
+}
+
+#indtour .self-active{
+    color: #ff6d1e !important;
+}
+#indtour .nav-item{
+   padding: 0px !important;
+}
+
+#indtour .nav-link{
+    padding: 10px !important;
+}
+
+#login-btn2{
+   width: 80px !important;
+   background-color:var(--orange) !important; 
+   border:0px;
+   margin-left:53.6%;
+   margin-right: 10px;
+   font-weight: 600;
+}
+#login-btn2:hover{
+    background-color:white !important;
+    color: var(--orange);
+}
+#indtour .profile-pic{
+    margin-right: 0px !important; 
+}
