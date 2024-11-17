@@ -26,7 +26,7 @@ Embark on your journey with **Safar Karo** and let your adventures begin!
 4. [Screenshots](#screenshots)  
 5. [Technologies](#technologies)  
 6. [Setup Instructions](#setup-instructions)  
-7. [Mermaid Diagram](#mermaid-diagram)  
+7. [Website Flow](#website-flow)  
 
 ---
 
@@ -119,7 +119,7 @@ npm start
    • Frontend: http://localhost:3000 <br> 
    • Backend: http://localhost:8000
 
-### **Mermaid Diagram**
+### **Website Flow**
 ```mermaid
 graph TD
     A[Home Page] --> B[Tour Details Page]
