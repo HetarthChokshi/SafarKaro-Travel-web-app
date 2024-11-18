@@ -167,4 +167,82 @@ graph TD
     I --> F
 ```
 
+### **Data Models and Relationships**
+The following diagram illustrates the key data models used in the project and their relationships with each other, including bookings, travelers, payments, and tour packages.
 
+```mermaid
+erDiagram
+    User ||--o{ Booking : "has"
+    Booking ||--o{ Traveller : "has"
+    Booking ||--o{ Payment : "has"
+    Booking ||--|| Domestic : "references"
+    Booking ||--|| International : "references"
+    Traveller ||--|| Booking : "belongs to"
+    Payment ||--|| Booking : "belongs to"
+    Packages_india {
+        string package_name PK
+        string img_poster
+    }
+    Packages_international {
+        string package_name PK
+        string img_poster
+        text description
+    }
+    Domestic {
+        string destination PK
+        decimal price
+        string days
+        string nights
+        string img_path
+        text highlights
+        text overview
+        text itinerary
+        text dates
+    }
+    International {
+        string destination PK
+        decimal price
+        string days
+        string nights
+        string img_path
+        text highlights
+        text overview
+        text itinerary
+        text dates
+    }
+    Contact {
+        string name
+        email email
+        integer mobile
+        text message
+    }
+    User {
+        integer id PK
+        string username
+    }
+    Booking {
+        string booking_id PK
+        date booking_date
+        string destination
+        integer no_of_travellers
+        integer travel_date
+        string tour
+    }
+    Traveller {
+        integer traveller_id PK
+        string name
+        integer age
+        email email
+        integer mobile
+        string country
+        string pancard
+        string passportNo
+        date issueDate
+    }
+    Payment {
+        integer payment_id PK
+        decimal amount
+        date date
+        string credit
+    }
+```
