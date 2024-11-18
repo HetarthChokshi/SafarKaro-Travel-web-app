@@ -21,7 +21,7 @@ Embark on your journey with **Safar Karo** and let your adventures begin!
 
 ## **Table of Contents**  
 1. [Overview](#overview)  
-2. [Video Demo](#video-demo)  
+2. [Video](#video)  
 3. [Features](#features)  
 4. [Screenshots](#screenshots)  
 5. [Technologies](#technologies)  
@@ -30,20 +30,26 @@ Embark on your journey with **Safar Karo** and let your adventures begin!
 
 ---
 
-## **Video Demo**  
-🎥 Watch the project in action: 
-<video width="900" controls>
-  <source src="https://github.com/user-attachments/assets/f8c056d0-60d9-40b7-94cd-61368ab36e4e" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+## **Video**  
+🎥 Watch the video tutorial for project in action : <br> <br>
+**Website Outlook**
 
+[SafarVideo1.webm](https://github.com/user-attachments/assets/f8c056d0-60d9-40b7-94cd-61368ab36e4e)
+
+**Website Outlook**
+
+[safarVideo2.webm](https://github.com/user-attachments/assets/66a74707-3e6d-446c-a5b6-5edad83e6c06)
+
+**Mail Confirmation**
+
+[safarVideo3.webm](https://github.com/user-attachments/assets/b39e828d-98b0-4f12-b91d-94ed3e0553c4)
 
 ---
 
 ## **Features**  
 
 - **Home Page**  
-  - Discover top destinations with user testimonials for added trust.  
+  - Discover top domestic and international destinations with user testimonials for added trust.  
 
 - **Detailed Tour Pages**  
   - View tour-specific information such as itineraries, travel dates, prices, and terms & conditions.  
