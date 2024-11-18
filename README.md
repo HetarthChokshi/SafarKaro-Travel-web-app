@@ -31,10 +31,12 @@ Embark on your journey with **Safar Karo** and let your adventures begin!
 ---
 
 ## **Video Demo**  
-🎥 Watch the project in action:  
+🎥 Watch the project in action: 
+<video width="900" controls>
+  <source src="https://github.com/user-attachments/assets/f8c056d0-60d9-40b7-94cd-61368ab36e4e" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
-- [Safar Karo Demo 1](https://via.placeholder.com/150?text=Demo+1)  
-- [Safar Karo Demo 2](https://via.placeholder.com/150?text=Demo+2)  
 
 ---
 
@@ -58,25 +60,51 @@ Embark on your journey with **Safar Karo** and let your adventures begin!
 
 ## **Screenshots**  
 
-### 1. **Home Page**  
+### 1. **Login Page**  
 Explore curated domestic and international destinations.  
 
-![Home Page](https://via.placeholder.com/800x400?text=Home+Page)  
+ <img src="https://github.com/user-attachments/assets/48b6e068-0916-4ad9-b7d5-b12eab95654e" alt="Screenshot 3" width="80%" height="60%" />
 
-### 2. **Tour Details Page**  
+### 2. **Home Page**  
+Explore curated domestic and international destinations.  
+
+<p >
+  <img src="https://github.com/user-attachments/assets/9ca27190-ecd2-4793-8050-23fc6e8c3842" alt="Screenshot 1" width="45%" height="60%" />
+  <img src="https://github.com/user-attachments/assets/a1c9992a-34a2-472f-a251-564423167579" alt="Screenshot 2" width="45%"  height="60%"/>
+</p>
+
+### 3. **Tour Details Page**  
 Get all the details about your chosen destination.  
 
-![Tour Details](https://via.placeholder.com/800x400?text=Tour+Details+Page)  
+<p align="">
+  <img src="https://github.com/user-attachments/assets/aea9c8c3-977a-4c86-9dce-6324114c09b4" alt="Screenshot 1" width="90%"  />
 
-### 3. **Traveller Details Form**  
-Fill in traveler information for your booking.  
+  <img src="https://github.com/user-attachments/assets/4f99517b-1dd0-4aa4-9505-e2e96067249f" alt="Screenshot 1" width="90%" height="60%" />
+    
+  <img src="https://github.com/user-attachments/assets/f48c2a44-d45b-499a-8459-0ffeea197a20" alt="Screenshot 2" width="90%"  height="60%"/>
+</p>
 
-![Traveller Form](https://via.placeholder.com/800x400?text=Traveller+Details+Form)  
+### 4. **About and Contact us Page**  
+Get to know the Travel company and contact information. 
 
-### 4. **User Dashboard**  
+<p align="">
+  <img src="https://github.com/user-attachments/assets/d88a87b4-f9a2-41ef-a9d9-92513df30d97" alt="Screenshot 1" width="90%"  />
+
+  <img src="https://github.com/user-attachments/assets/5b9b5d7e-32cf-4158-9cd4-e9fe2a680bd7" alt="Screenshot 1" width="90%" height="60%" />
+</p> 
+
+### 5. **Payment Page**  
+Make payment for your booking here.
+
+ <img src="https://github.com/user-attachments/assets/015c0f99-de56-411f-aa56-7ce096572be5" alt="Screenshot 3" width="80%" height="60%" />
+
+### 6. **User Dashboard**  
 Manage your bookings and download receipts.  
 
-![User Dashboard](https://via.placeholder.com/800x400?text=User+Dashboard)  
+ <img src="https://github.com/user-attachments/assets/0252b375-d50d-45b6-b0a9-1e50ef98e186" alt="Screenshot 3" width="80%" height="60%" />
+
+<img src="https://github.com/user-attachments/assets/9271dee6-373a-4d94-83f8-b96b2b403276" alt="Screenshot 3" width="80%" height="60%" />
+
 
 ---
 
