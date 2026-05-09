@@ -1,4 +1,3 @@
-import jinja2
 import pdfkit
 import os
 from django.conf import settings

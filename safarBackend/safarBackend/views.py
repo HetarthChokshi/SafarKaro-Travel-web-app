@@ -6,6 +6,26 @@ from rest_framework_simplejwt.tokens import RefreshToken,AccessToken
 from django.contrib.auth.models import User
 from django.views.decorators.csrf import csrf_exempt
 
+
+@api_view(['GET'])
+@permission_classes([AllowAny])
+def home(request):
+    return Response({
+        'service': 'SafarKaro Backend',
+        'status': 'ok',
+        'api_base': '/api/'
+    })
+
+
+@api_view(['GET'])
+@permission_classes([AllowAny])
+def api_index(request):
+    return Response({
+        'message': 'Backend API is running',
+        'auth_token': '/api/token/',
+        'register': '/api/register/'
+    })
+
 @csrf_exempt
 @api_view(['POST','GET'])
 @permission_classes([AllowAny])

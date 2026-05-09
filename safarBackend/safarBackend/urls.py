@@ -18,7 +18,9 @@ from django.contrib import admin
 from django.urls import path,include
 from .views import * 
 urlpatterns = [
+    path('', home, name='home'),
     path('admin/', admin.site.urls),
+    path('api/', api_index, name='api-index'),
     path('api/', include('server.urls')),
     path('get-user-id/', get_user_id, name='get_user_id'),
 

@@ -2,22 +2,41 @@ from pathlib import Path
 from datetime import timedelta
 import os
 import pdfkit
+
+try:
+    import dj_database_url
+except ImportError:
+    dj_database_url = None
 # from rest_framework.permissions import AllowAny
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+
+def env_bool(key: str, default: bool = False) -> bool:
+    value = os.getenv(key)
+    if value is None:
+        return default
+    return value.lower() in ('1', 'true', 'yes', 'on')
+
+
+def env_list(key: str, default: list[str]) -> list[str]:
+    value = os.getenv(key)
+    if not value:
+        return default
+    return [item.strip() for item in value.split(',') if item.strip()]
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-sshp$%%m+6u*(r4q$i2qz2w=@x4ws6tak8!0eqoj3ot3cbyub6'
+SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'django-insecure-dev-only-key-change-me')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env_bool('DJANGO_DEBUG', True)
 
-ALLOWED_HOSTS = ["*"]
-CORS_ALLOW_ALL_ORIGINS = True
+ALLOWED_HOSTS = env_list('DJANGO_ALLOWED_HOSTS', ['*'])
+CORS_ALLOW_ALL_ORIGINS = env_bool('CORS_ALLOW_ALL_ORIGINS', True)
 
 
 # Application definition
@@ -101,6 +120,10 @@ DATABASES = {
     }
 }
 
+DATABASE_URL = os.getenv('DATABASE_URL')
+if DATABASE_URL and dj_database_url:
+    DATABASES['default'] = dj_database_url.parse(DATABASE_URL, conn_max_age=600)
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -141,6 +164,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static')
 ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
@@ -149,8 +173,13 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+DEFAULT_WKHTMLTOPDF_PATH = (
+    r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'
+    if os.name == 'nt'
+    else '/usr/bin/wkhtmltopdf'
+)
 PDFKIT_CONFIG = {
-    'wkhtmltopdf': r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe',
+    'wkhtmltopdf': os.getenv('WKHTMLTOPDF_PATH', DEFAULT_WKHTMLTOPDF_PATH),
 }
 
 
@@ -160,14 +189,14 @@ PDFKIT_CONFIG = {
 # settings.py
 
 # Email backend
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_BACKEND = os.getenv('EMAIL_BACKEND', 'django.core.mail.backends.smtp.EmailBackend')
 
 # SMTP configuration for Gmail
-EMAIL_HOST = 'smtp.gmail.com'  # Gmail's SMTP server
-EMAIL_PORT = 587               # For TLS
-EMAIL_USE_TLS = True           # Use TLS for security
-EMAIL_HOST_USER = 'clouds.devnet@gmail.com'  # Your Gmail address
-EMAIL_HOST_PASSWORD = 'tqnn fjwb tngj hroz'  # Your Gmail password
+EMAIL_HOST = os.getenv('EMAIL_HOST', 'smtp.gmail.com')
+EMAIL_PORT = int(os.getenv('EMAIL_PORT', '587'))
+EMAIL_USE_TLS = env_bool('EMAIL_USE_TLS', True)
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', '')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', '')
 
 # Optional settings (for personalization)
 # DEFAULT_FROM_EMAIL = 'your_email@gmail.com'  # Default "from" address for your emails
