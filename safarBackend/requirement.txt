@@ -1,4 +1,4 @@
-Backend (Django) :
+# Backend (Django) :
 Django
 djangorestframework
 djangorestframework-simplejwt
@@ -6,10 +6,3 @@ django-cors-headers
 pdfkit
 Pillow
 requests
-
-Frontend (React) :
-React
-React Router DOM
-Axios
-Bootstrap
-jwt-decode

@@ -1,0 +1,14 @@
+[project]
+name = "safarbackend"
+version = "0.1.0"
+description = "Safar Karo is a modern travel booking platform designed to transform how people explore the world. Our mission is simple: to inspire travelers to dream big, explore new horizons, and discover the beauty of domestic and international destinations."
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+safarbackend = "safarbackend:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
